@@ -10,65 +10,61 @@ int main() {
 
     // Atribuição de Variáveis
 
-    char estadoA, estadoB;
-    int cartaA01, cartaB01;
-    char cidadeA01[20], cidadeB01[20];
-    int populacaoA01, populacaoB01;
-    float areaA01, areaB01;
-    float pibA01, pibB01;
-    int pontosturisticosA01, pontosturisticosB01;
+    char cartaA1[3];
+    char cartaB1[3];
+    char cidadeA1[20];
+    char cidadeB1[20];
+    int populacaoA1, populacaoB1;
+    float areaA1, areaB1;
+    float pibA1, pibB1;
+    int pontosturisticosA1, pontosturisticosB1;
      
     // Cadastro das Cartas
 
-    // CartaA01
+    // CartaA1
 
     printf("INSIRA DADOS DA PRIMEIRA CARTA\n\n");
 
-    printf("Código do Estado: \n");
-    scanf("%s", &estadoA);
-
-    printf("Número da Carta: \n");
-    scanf("%d", &cartaA01);
+    printf("Código da Carta (letra e número): \n");
+    scanf("%s", cartaA1);
 
     printf("Nome da cidade: \n");
-    scanf("%s", cidadeA01);
+    scanf("%s", cidadeA1);
 
     printf("População: \n");
-    scanf("%d", &populacaoA01);
+    scanf("%d", &populacaoA1);
 
     printf("Área: \n");
-    scanf("%f", &areaA01);
+    scanf("%f", &areaA1);
 
     printf("PIB: \n");
-    scanf("%f", &pibA01);
+    scanf("%f", &pibA1);
 
     printf("Quantidade de pontos turísticos: \n");
-    scanf("%d", &pontosturisticosA01);
+    scanf("%d", &pontosturisticosA1);
 
-    // CartaB01
+    // CartaB1
 
+    printf("\n");
     printf("INSIRA DADOS DA SEGUNDA CARTA\n\n");
 
-    printf("Código do Estado: \n");
-    scanf("%s", &estadoB);
-    
-    printf("Número da Carta: \n");
-    scanf("%d", &cartaB01);
+    printf("Código da Carta (letra e número): \n");
+    scanf("%s", cartaB1);
 
     printf("Nome da Cidade: \n");
-    scanf("%s", cidadeB01);
+    scanf("%s", cidadeB1);
     
     printf("População: \n");
-    scanf("%d", &populacaoB01);
+    scanf("%d", &populacaoB1);
     
-    print("Área: \n");
-    scanf("%f", &areaB01);
+    printf("Área: \n");
+    scanf("%f", &areaB1);
     
     printf("PIB: \n");
-    scanf("%f", &pibB01);
+    scanf("%f", &pibB1);
 
     printf("Quantidade de pontos turísticos: \n");
-    scanf("%d", &pontosturisticosB01);
+    scanf("%d", &pontosturisticosB1);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -76,22 +72,22 @@ int main() {
 
     printf("\n\nCARTAS CADASTRADAS\n\n");
 
-        printf("Carta: %c0%d\n", estadoA, cartaA01);
-        printf("Cidade: %s\n", cidadeA01);
-        printf("População: %d\n", populacaoA01);
-        printf("Área(km²): %.2f\n", areaA01);
-        printf("PIB(R$): %.2f\n", pibA01);
-        printf("Quantidade de Pontos Turísticos: %d\n\n", pontosturisticosA01);
+        printf("Carta: %s\n", cartaA1);
+        printf("Cidade: %s\n", cidadeA1);
+        printf("População: %d\n", populacaoA1);
+        printf("Área(km²): %.2f\n", areaA1);
+        printf("PIB(R$): %.2f\n", pibA1);
+        printf("Quantidade de Pontos Turísticos: %d\n\n", pontosturisticosA1);
 
 
-        printf("Carta: %c0%d\n", estadoB, cartaB01);
-        printf("Cidade: %s\n", cidadeB01);
-        printf("População: %d\n", populacaoB01);
-        printf("Área(km²): %.2f\n", areaB01);
-        printf("PIB(R$): %.2f\n", pibB01);
-        printf("Quantidade de Pontos Turísticos: %d\n\n", pontosturisticosB01);
+        printf("Carta: %s\n", cartaB1);
+        printf("Cidade: %s\n", cidadeB1);
+        printf("População: %d\n", populacaoB1);
+        printf("Área(km²): %.2f\n", areaB1);
+        printf("PIB(R$): %.2f\n", pibB1);
+        printf("Quantidade de Pontos Turísticos: %d\n\n", pontosturisticosB1);
     
-        printf("Fim de Trabalho");
+        printf("Fim\n\n\n");
         
     return 0;
 }
