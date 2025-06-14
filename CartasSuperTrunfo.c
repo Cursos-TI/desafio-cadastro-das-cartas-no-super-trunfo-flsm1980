@@ -38,7 +38,7 @@ int main() {
     scanf("%f", &pibA01);
 
     printf("Informe a quantidade de pontos turísticos: \n");
-    scanf("%d", pontosturisticosA01);
+    scanf("%d", &pontosturisticosA01);
 
 
     // Exibição dos Dados das Cartas:
