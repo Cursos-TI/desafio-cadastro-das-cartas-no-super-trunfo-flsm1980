@@ -17,7 +17,7 @@ int main() {
     float areaA01, areaB01;
     float pibA01, pibB01;
     int pontosturisticosA01, pontosturisticosB01;
-
+     
     // Cadastro das Cartas
 
     // CartaA01
@@ -74,7 +74,7 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    printf("CARTAS CADASTRADAS\n\n");
+    printf("\n\nCARTAS CADASTRADAS\n\n");
 
         printf("Carta: %c0%d\n", estadoA, cartaA01);
         printf("Cidade: %s\n", cidadeA01);
