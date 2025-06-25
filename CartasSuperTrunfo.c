@@ -10,11 +10,11 @@ int main() {
 
     // Atribuição de Variáveis
 
-    char cartaA1[3];
-    char cartaB1[3];
+    char cartaA1[2];
+    char cartaB1[2];
     char cidadeA1[20];
     char cidadeB1[20];
-    int populacaoA1, populacaoB1;
+    unsigned long int populacaoA1, populacaoB1;
     float areaA1, areaB1;
     float pibA1, pibB1;
     int pontosturisticosA1, pontosturisticosB1;
@@ -103,6 +103,11 @@ int main() {
         // Exibição dos dados calculados
         printf("Densidade Populacional: %.2f hab/km²\n", densidadeB1);
         printf("PIB per Capita: %.2f R$\n\n", pibcapitaB1);
+
+        // Cálculo do Super Poder cartaA1
+        float superpoderA1 = (populacaoA1 + areaA1 + pibA1 + pontosturisticosA1 + pibA1 + 1/densidadeA1);
+        printf ("Superpoder Carta A1: %.2f\n", superpoderA1);
+
 
         printf("Fim\n\n\n");
         
