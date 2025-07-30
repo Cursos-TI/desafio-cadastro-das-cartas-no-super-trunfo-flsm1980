@@ -20,7 +20,7 @@ int main() {
     printf("INSIRA DADOS DA PRIMEIRA CARTA\n\n");
 
     printf("Código da Carta (letra e número): \n");
-    scanf("%s", cartaA1);
+    scanf("%4s", cartaA1);
 
     printf("Nome da cidade: \n");
     scanf(" %29[^\n]", cidadeA1);
@@ -43,7 +43,7 @@ int main() {
     printf("INSIRA DADOS DA SEGUNDA CARTA\n\n");
 
     printf("Código da Carta (letra e número): \n");
-    scanf("%s", cartaB1);
+    scanf("%4s", cartaB1);
 
     printf("Nome da cidade: \n");
     scanf(" %29[^\n]", cidadeB1);
@@ -83,7 +83,6 @@ int main() {
           inversodensidadeA1 = 1.0f / densidadeA1;} 
         else {
           densidadeA1 = 0.0f;
-          printf("Aviso: área da Carta A01 é zero, densidade populacional indefinida!\n\n");
         }
         
         // Cálculo do PIB per capita da carta A1
@@ -91,7 +90,6 @@ int main() {
           pibcapitaA1 = pibA1 / (float)populacaoA1;} // Garante que a divisão seja float
         else {
           pibcapitaA1 = 0.0f;
-          printf("Aviso: população da Carta A01 é zero, PIB per capita indefinido!\n\n");
         }
         
         // Exibição dos dados calculados
@@ -124,7 +122,6 @@ int main() {
           inversodensidadeB1 = 1.0f / densidadeB1;} 
         else {
           densidadeB1 = 0.0f;
-          printf("Aviso: área da Carta B01 é zero, densidade populacional indefinida!\n\n");
         }
 
         // Cálculo do PIB per capita da carta 2
@@ -132,7 +129,6 @@ int main() {
           pibcapitaB1 = pibB1 / (float)populacaoB1;} // Garante que a divisão seja float
         else {
           pibcapitaB1 = 0.0f;
-          printf("Aviso: população da Carta B01 é zero, PIB per capita indefinido!\n\n");
         }
 
         // Exibição dos dados calculados
