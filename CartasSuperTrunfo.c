@@ -8,7 +8,7 @@ int main() {
 
     // Atribuição de Variáveis
 
-    char cartaA1[3], cartaB1[3], cidadeA1[30], cidadeB1[30];
+    char cartaA1[5], cartaB1[5], cidadeA1[30], cidadeB1[30];
     unsigned long int populacaoA1, populacaoB1;
     float areaA1, areaB1, pibA1, pibB1, densidadeA1, densidadeB1, inversodensidadeA1, inversodensidadeB1, pibcapitaA1, pibcapitaB1;
     int pontosturisticosA1, pontosturisticosB1;
@@ -99,7 +99,7 @@ int main() {
         printf("PIB per Capita: %.2f R$\n", pibcapitaA1);
         
         // Cálculo do Super Poder cartaA1
-        float superpoderA1 = populacaoA1 + areaA1 + pibA1 + pontosturisticosA1 + pibcapitaA1 + inversodensidadeA1;
+        float superpoderA1 = (float)populacaoA1 + areaA1 + pibA1 + (float)pontosturisticosA1 + pibcapitaA1 + inversodensidadeA1;
         printf ("Superpoder Carta A01: %.2f\n\n", superpoderA1);
         
         
@@ -140,7 +140,7 @@ int main() {
         printf("PIB per Capita: %.2f R$\n", pibcapitaB1);
 
         // Cálculo do Super Poder cartaB1
-        float superpoderB1 = populacaoB1 + areaB1 + pibB1 + pontosturisticosB1 + pibcapitaB1 + inversodensidadeB1;
+        float superpoderB1 = (float)populacaoB1 + areaB1 + pibB1 + (float)pontosturisticosB1 + pibcapitaB1 + inversodensidadeB1;
         printf ("Superpoder Carta B01: %.2f\n\n", superpoderB1);
 
         // Comparação dados das cartas
